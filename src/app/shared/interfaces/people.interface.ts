@@ -12,12 +12,12 @@ export interface Result {
     species: string[];
     vehicles: string[];
     starships: string[];
-    created: Date;
-    edited: Date;
+    created: string;
+    edited: string;
     url: string;
 }
 
-export interface People {
+export interface Data {
     count: number;
     next: string;
     previous?: any;

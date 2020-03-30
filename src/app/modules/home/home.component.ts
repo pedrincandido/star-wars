@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { People } from 'src/app/shared/interfaces/people.interface';
-import { TitleService } from 'src/app/shared/services/title.service';
+import { Data } from 'src/app/shared/interfaces/people.interface';
+import { TitleService } from 'src/app/shared/services/title/title.service';
 
 @Component({
   selector: 'app-home',
@@ -8,7 +8,7 @@ import { TitleService } from 'src/app/shared/services/title.service';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  peopleData: People;
+  peopleData: Data;
   isNext: boolean | string;
   isPrevious: boolean | string;
 
@@ -29,10 +29,10 @@ export class HomeComponent implements OnInit {
   }
 
   increasePage() {
-    this.getPeople(this.peopleData.next);
+    this.getPeople(this.peopleData?.next);
   }
 
   decreasePage() {
-    this.getPeople(this.peopleData.previous);
+    this.getPeople(this.peopleData?.previous);
   }
 }

@@ -6,12 +6,9 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { PresentationStarWarsComponent } from './presentation-star-wars.component';
 
 class MockRenderer {
-  addClass(document: string, cssClass: string) {
-  }
+  addClass(document: string, cssClass: string) { }
 
-  removeClass(el: any, name: string) {
-
-  }
+  removeClass(el: any, name: string) { }
 }
 
 describe('PresentationStarWarsComponent', () => {

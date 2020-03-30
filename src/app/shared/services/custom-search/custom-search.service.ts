@@ -17,8 +17,8 @@ export class CustomSearchService {
       .append('cx', environment.cx)
       .append('q', search)
       .append('searchType', 'image')
-      .append('num', '2');
+      .append('num', '1');
 
-    return this.http.get('https://www.googleapis.com/customsearch/v1', { params: httParams }).toPromise();
+    return this.http.get(environment.custom_search, { params: httParams }).toPromise();
   }
 }
