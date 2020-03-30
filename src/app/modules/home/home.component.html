@@ -1,0 +1,8 @@
+<app-header></app-header>
+<app-hero></app-hero>
+<app-tile-list [titleList]="peopleData?.results"></app-tile-list>
+<app-pagination
+ (increasePage)="increasePage()"
+ (decreasePage)="decreasePage()"
+ [isPrevious]="isPrevious"
+ [isNext]="isNext"></app-pagination>

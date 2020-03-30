@@ -1,0 +1,66 @@
+.header {
+  background: linear-gradient(to bottom, black 0%, transparent 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );
+  display: flex;
+  padding: 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  box-sizing: border-box;
+  z-index: 5;
+}
+
+.search {
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.search input {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  height: 37px;
+  width: 20%;
+  background: transparent;
+  color: #ffffff;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 0;
+  border: 2px solid rgba(245, 245, 241, 0.1);
+  outline: none;
+  border-radius: 37px;
+  padding: 0 10px;
+  pointer-events: all;
+  -webkit-transition: border 0.25s ease, width 0.125s ease 0.125s;
+  transition: border 0.25s ease, width 0.125s ease 0.125s;
+}
+
+.search input {
+  border: 2px solid #a39c37;
+  width: 30%;
+}
+
+.logo {
+  width: 151px;
+  height: 41px;
+  margin-right: 10px;
+  -webkit-transition: margin 0.125s ease;
+  transition: margin 0.125s ease;
+}
+
+.logo:hover {
+  cursor: pointer;
+  margin-top: 2px;
+}
+
+.star,
+.wars {
+  width: 150px;
+}

@@ -1,0 +1,14 @@
+<div class="pagination">
+    <h6 class="registers">
+        <span *ngIf="previous">
+            {{previous}}
+        </span>
+        <span *ngIf="next">
+            - {{next}}
+        </span>
+    </h6>
+    <i class="material-icons text-silver arrow pointer" [ngClass]="{ 'disabled': !isPrevious || isLoading}"
+        icon="arrow-left" (click)="!isLoading && onDecreasePage()" id="keyboardArrowLeftID">keyboard_arrow_left</i>
+    <i class="material-icons text-silver pointer" [ngClass]="{ 'disabled': !isNext || isLoading}"
+        icon="arrow-right" (click)="!isLoading && onIncreasePage()" id="keyBoardArrowRightID">keyboard_arrow_right</i>
+</div>

@@ -1,0 +1,24 @@
+.arrow {
+  margin: 0px 15px;
+}
+
+.registers {
+  margin: 2px 0px 0px;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.6;
+  cursor: default;
+}
+
+.pointer {
+  cursor: pointer;
+  color: #6c757d !important;
+}
+
+.pagination {
+  display: flex;
+  align-self: flex-end;
+  justify-content: flex-end;
+}

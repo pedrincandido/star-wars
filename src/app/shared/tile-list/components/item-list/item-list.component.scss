@@ -1,0 +1,66 @@
+.item {
+  width: 250px;
+  max-width: 250px;
+  min-width: calc(20% - 10px);
+  background-color: #000000;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  height: 280px;
+  margin-top: 15px;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  margin-right: 10px;
+  -webkit-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+.item:nth-child(n+6) {
+  margin-top: 20px;
+}
+
+.item:last-child {
+  margin-right: 0;
+}
+
+.item .overlay {
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.75) 0%, transparent 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75) 0%, transparent 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );
+  padding: 20px;
+  position: relative;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0;
+  -webkit-transition: opacity .125s ease;
+  transition: opacity .125s ease;
+}
+
+.item .overlay .title {
+  font-size: 22px;
+  font-weight: 200;
+  opacity: 0;
+  -webkit-transition: opacity .25s ease;
+  transition: opacity .25s ease;
+}
+
+.item:hover {
+  background-size: 120%;
+}
+
+.item:hover .overlay {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.item:hover .overlay .plot {
+  margin-top: 10px;
+  opacity: 1;
+}
+
+.item:hover .overlay .title {
+  opacity: 1;
+}

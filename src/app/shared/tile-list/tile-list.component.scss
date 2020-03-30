@@ -1,0 +1,45 @@
+.title-list {
+  padding: 20px 40px;
+  box-sizing: border-box;
+  -webkit-transition: opacity 3s ease;
+  transition: opacity 3s ease;
+  opacity: 0;
+  position: relative;
+  z-index: 4;
+}
+
+.title-list .titles-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 20px 0;
+  width: calc(100vw - 80px);
+  box-sizing: border-box;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.title-list[data-loaded="true"] {
+  opacity: 1;
+}
+
+.plot {
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  font-weight: 300;
+  line-height: 1.6;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-transition: margin 0.25s ease 0.125s, opacity 0.25s ease 0.25s;
+  transition: margin 0.25s ease 0.125s, opacity 0.25s ease 0.25s;
+}

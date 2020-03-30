@@ -1,0 +1,23 @@
+.navigation ul {
+  display: flex;
+  height: 37px;
+  -moz-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.navigation ul li {
+  font-weight: 400;
+  padding: 7px 10px;
+  font-size: 14px;
+  -webkit-transition: background 0.125s ease;
+  transition: background 0.125 ease;
+  border-radius: 3px;
+}
+
+.navigation ul li:hover {
+  background: #a39c37;
+  cursor: pointer;
+}

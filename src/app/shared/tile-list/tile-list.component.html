@@ -1,0 +1,22 @@
+<div class="title-list" data-loaded="true">
+    <div class="title">
+        <div class="titles-wrapper">
+            <ng-container *ngFor="let title of titleList">
+                <app-item-list [title]="title.name">
+                    <div class="title">{{title?.name}}</div>
+                    <div class="plot">
+                        <span>
+                            Height : {{title?.height}}
+                        </span>
+                        <span>
+                            Gender: {{title?.gender}}
+                        </span>
+                        <span>
+                            Birth Year: {{title?.birth_year}}
+                        </span>
+                    </div>
+                </app-item-list>
+            </ng-container>
+        </div>
+    </div>
+</div>
